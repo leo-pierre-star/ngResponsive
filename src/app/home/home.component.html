@@ -1,0 +1,28 @@
+<div class="w3-container bgimg">
+    <div class="w3-display-middle">
+        <span class="w3-center w3-padding-large w3-black w3-animate-opacity">WELCOME TO MY WEBSITE</span>
+    </div>
+</div>
+<div class="w3-container w3-padding">
+    <h3>ABOUT</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia nisi corporis numquam dolores, maiores esse
+        rerum nesciunt accusamus, necessitatibus nostrum labore aut fugit nulla debitis harum porro, sint id dolorum.
+    </p>
+    <p>Omnis, saepe est quisquam accusamus dolores fugiat nesciunt repellat. Ducimus praesentium at beatae sit
+        reiciendis illum aut vero reprehenderit qui, ullam alias!
+    </p>
+</div>
+
+<div class="w3-container w3-padding w3-animate-left">
+
+    <h3>OUR TEAM</h3>
+    <ul class="w3-ul w3-border">
+        <li *ngFor='let person of team'>
+            <img class="w3-left w3-circle w3-margin-right" src="../../assets/{{person.icon}}.png" alt="">
+            <span class="w3-large">{{person.firstname}} {{person.lastname}}</span> <br>
+            <span>{{person.status}}</span>
+
+        </li>
+
+    </ul>
+</div>

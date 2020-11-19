@@ -1,0 +1,22 @@
+<div class="w3-container w3-content w3-center ">
+    <h2 class="w3-margin-top">Contactez-nous</h2>
+
+    <form [formGroup]="form" (ngSubmit)="onSubmit(form.value)">
+        <p>
+            <label for="name">Nom</label><br>
+            <input type="text" name="name" formControlName="name">
+        </p>
+
+        <p>
+            <label for="email">Email</label><br>
+            <input type="email" name="email" formControlName="email">
+        </p>
+        <p>
+            <label for="message">Message</label><br>
+            <textarea type="message" name="message" formControlName="message"> </textarea>
+        </p>
+        <button class="w3-btn w3-green" type="submit" [disabled]="!form.valid">Submit</button>
+
+    </form>
+
+</div>
