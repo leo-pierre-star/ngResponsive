@@ -10,7 +10,7 @@ body, h1, h2, h3, h4, h5, h6 {
 }
 
 .bgimg{
-    background-image: url('assets/test.jpg');
+    background-image: url('assets/photo_accueil.jpg');
     background-attachment: fixed;
     background-position:  center;
     background-repeat: no-repeat;

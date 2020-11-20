@@ -1,12 +1,11 @@
-<div class="w3-container bgimg">
+<div class="w3-container bgimg w3-animate-right">
     <div class="w3-display-middle">
-        <span class="w3-center w3-padding-large w3-black w3-animate-opacity">WELCOME TO MY WEBSITE</span>
+        <span class="w3-center w3-padding-large w3-black w3-animate-opacity">Bienvenue sur mon site Angular</span>
     </div>
 </div>
 <div class="w3-container w3-padding">
     <h3>ABOUT</h3>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia nisi corporis numquam dolores, maiores esse
-        rerum nesciunt accusamus, necessitatibus nostrum labore aut fugit nulla debitis harum porro, sint id dolorum.
+    <p>Une Single Page Application (SPA) qui regroupe les bases des fonctionnalités d'Angular
     </p>
     <p>Omnis, saepe est quisquam accusamus dolores fugiat nesciunt repellat. Ducimus praesentium at beatae sit
         reiciendis illum aut vero reprehenderit qui, ullam alias!
@@ -18,7 +17,7 @@
     <h3>OUR TEAM</h3>
     <ul class="w3-ul w3-border">
         <li *ngFor='let person of team'>
-            <img class="w3-left w3-circle w3-margin-right" src="../../assets/{{person.icon}}.png" alt="">
+            <img class="w3-left w3-circle w3-margin-right" src="./assets/{{person.icon}}.png" alt="">
             <span class="w3-large">{{person.firstname}} {{person.lastname}}</span> <br>
             <span>{{person.status}}</span>
 

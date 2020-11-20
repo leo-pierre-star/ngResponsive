@@ -50,6 +50,27 @@ export class PortfolioComponent implements OnInit {
       src: 'p4',
       alt: 't8',
     },
+
+    {
+      title: 'Titre 10',
+      src: 'p1',
+      alt: 't10',
+    },
+    {
+      title: 'Titre 11',
+      src: 'p2',
+      alt: 't11',
+    },
+    {
+      title: 'Titre 12',
+      src: 'p3',
+      alt: 't12',
+    },
+    {
+      title: 'Titre 13',
+      src: 'p4',
+      alt: 't13',
+    },
   ]
   ngOnInit(): void {
   }

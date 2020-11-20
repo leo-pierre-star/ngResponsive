@@ -8,6 +8,9 @@ import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { FormContactComponent } from './form-contact/form-contact.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
+import { InfosPremiumComponent } from './infos-premium/infos-premium.component';
 
 
 @NgModule({
@@ -18,13 +21,14 @@ import { FormContactComponent } from './form-contact/form-contact.component';
     FooterComponent,
     PortfolioComponent,
     FormContactComponent,
+    InfosPremiumComponent,
    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule, 
-    ReactiveFormsModule,
+    ReactiveFormsModule, ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
     
   ],
   providers: [],

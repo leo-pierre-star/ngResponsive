@@ -1,21 +1,27 @@
+<div class="w3-container bgimgContact w3-animate-right">
+    <div class="w3-display-middle">
+        <span class="w3-center w3-padding-large w3-black w3-animate-opacity">Contactez-nous !</span>
+    </div>
+</div>
+
 <div class="w3-container w3-content w3-center ">
-    <h2 class="w3-margin-top">Contactez-nous</h2>
+    <h2 class="w3-margin-top">Ne craignez-rien, nous sommes les bests.</h2>
 
     <form [formGroup]="form" (ngSubmit)="onSubmit(form.value)">
         <p>
             <label for="name">Nom</label><br>
-            <input type="text" name="name" formControlName="name">
+            <input class="w3-input" type="text" name="name" formControlName="name">
         </p>
 
         <p>
             <label for="email">Email</label><br>
-            <input type="email" name="email" formControlName="email">
+            <input class="w3-input" type="email" name="email" formControlName="email">
         </p>
         <p>
             <label for="message">Message</label><br>
-            <textarea type="message" name="message" formControlName="message"> </textarea>
+            <textarea class="w3-input" type="message" name="message" formControlName="message"> </textarea>
         </p>
-        <button class="w3-btn w3-green" type="submit" [disabled]="!form.valid">Submit</button>
+        <button class="w3-btn w3-green w3-margin-bottom" type="submit" [disabled]="!form.valid">Submit</button>
 
     </form>
 

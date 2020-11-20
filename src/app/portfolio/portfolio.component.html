@@ -1,11 +1,9 @@
 <div class="w3-container w3-content w3-padding-64">
     <h3 class="w3-center"> PORTFOLIO</h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem recusandae consectetur quibusdam odit
-        rerum ipsa laboriosam at. Voluptatum libero quaerat facere dignissimos, quis omnis? Qui neque sapiente ea nam
-        quam.</p>
+    <p>Une liste de photos professionnelles prise sur le magnifique site qu'est <a target="blank" href="https://www.pexels.com/">pexels.com</a></p>
     <div class="w3-row ligne">
         <div class="w3-container w3-quarter " *ngFor="let img of portfolio">
-            <img src="../../assets/{{img.src}}.jpg" alt="{{img.src}}">
+            <img src="./assets/{{img.src}}.jpg" alt="{{img.src}}">
             <em class="w3-block">{{img.title}}</em>
         </div>
 
