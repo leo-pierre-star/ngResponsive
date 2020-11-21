@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ngResponsive';
+  connecte = false;
+
+ public login(){
+    this.connecte=true;
+  }
 }

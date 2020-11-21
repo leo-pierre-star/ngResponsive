@@ -1,18 +1,25 @@
-<div class="w3-top">
-    <!-- Nav classique -->
-    <div class="w3-bar">
-        <nav>
-        <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium "(click)='toggleMenuMob()'><i class="fa fa-bars "></i></a>
-        <a class="w3-bar-item w3-button" routerLink=""><i class="fa fa-home"></i> HOME</a>
-        <a class="w3-bar-item w3-button w3-hide-small" routerLink="portfolio"><i class="fa fa-th" ></i>  PORTFOLIO</a>
-        <a class="w3-bar-item w3-button w3-hide-small" routerLink="contact"><i class="fa fa-envelope"></i> CONTACT</a>
+<!-- Nav classique -->
+<div class="w3-bar w3-black">
+    <nav>
+        <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium " (click)='toggleMenuMob()'><i
+                class="fa fa-bars "></i></a>
+        <a class="w3-bar-item w3-button" routerLink=""><i class="fa fa-home"></i> Accueil</a>
+        <a class="w3-bar-item w3-button w3-hide-small" routerLink="portfolio"><i class="fa fa-th"></i> Portfolio</a>
+        <a class="w3-bar-item w3-button w3-hide-small" routerLink="contact"><i class="fa fa-envelope"></i>
+            Contact</a>
+        <a class="w3-bar-item w3-button w3-hide-small" routerLink="infos"><i class="fa fa-info"></i> Infos
+            Premiums</a>
+            <a *ngIf="connecte" class="w3-bar-item w3-button w3-hide-small" (click)='logout()' ><i class="fa fa-sign-out"></i>Se déconnecter</a>
+
     </nav>
-    </div>
-    <!-- Nav mobile -->
-    <div class="w3-bar-block w3-hide-large w3-hide-medium w3-hide" [ngClass]="{'w3-show w3-animate-left': menuMobile}">
-        <nav>   
-        <a class="w3-bar-item w3-button (click)='toggleMenuMob()' " routerLink="portfolio" > PORTFOLIO</a>
-        <a class="w3-bar-item w3-button (click)='toggleMenuMob()' " routerLink="contact" > CONTACT</a>
+</div>
+<!-- Nav mobile -->
+<div class="w3-bar-block w3-hide-large w3-hide-medium w3-hide" [ngClass]="{'w3-show w3-animate-left': menuMobile}">
+    <nav>
+        <a class="w3-bar-item w3-button (click)='toggleMenuMob()' " routerLink="portfolio"> PORTFOLIO</a>
+        <a class="w3-bar-item w3-button (click)='toggleMenuMob()' " routerLink="contact"> CONTACT</a>
+        <a class="w3-bar-item w3-button w3-hide-small" routerLink="infos"><i class="fa fa-info"></i> Infos
+            Premiums</a>
+            <a *ngIf="connecte" class="w3-bar-item w3-button w3-hide-small" (click)='logout()' ><i class="fa fa-sign-out"></i> Se déconnecter</a>
     </nav>
-    </div>
 </div>

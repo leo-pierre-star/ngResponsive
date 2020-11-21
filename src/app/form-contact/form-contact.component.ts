@@ -23,7 +23,8 @@ export class FormContactComponent implements OnInit {
 
   onSubmit(val: any): void {
     console.log(val)
-    alert('Merci ' + val.name + ' pour votre interet !')
+    alert('Merci ' + val.name + ' pour votre intérêt ! Nous vous recontacterons sous peu !')
+  
   }
 
 }

@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { SimpsonsService } from '../simpsons.service';
+import { HttpClient } from '@angular/common/http';
+
 
 @Component({
   selector: 'app-footer',
@@ -7,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  constructor() { }
+  constructor(public http: SimpsonsService) { }
 
   ngOnInit(): void {
   }

@@ -1,1 +1,21 @@
-<p>infos-premium works!</p>
+<h1 class="w3-center">WordPress Posts</h1>
+<section class="w3-center" *ngIf="!read">
+    <div *ngFor="let post of posts; let i=index">
+        <img class="w3-round" src="{{ post._embedded['wp:featuredmedia'][0].media_details.sizes.medium.source_url }}" alt="">
+        <h2><a  (click)="readPost(i) " style="cursor: pointer;">{{post.title.rendered}}</a></h2>
+        <p class="w3-margin" [innerHTML]="post.excerpt.rendered"></p>
+        <hr>
+    </div>
+  
+</section>
+
+<section class="w3-center w3-container w3-content" *ngIf="read">
+
+    
+    <h2>{{postTitle}}</h2>
+
+    <img src="{{ postImg }}" alt="">
+
+    <p class="w3-margin" [innerHTML]="postParagraphe"> </p>
+    <button class="w3-button w3-red w3-margin" (click)="read = !read" style="cursor: pointer;">Retour</button>
+</section>

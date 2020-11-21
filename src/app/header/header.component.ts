@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -6,16 +7,30 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-
+  connecte = false
   menuMobile = false;
 
-  constructor() { }
+  constructor(private router: Router) {
+  
+   }
 
-  toggleMenuMob(): void{
+  toggleMenuMob(): void {
     this.menuMobile = !this.menuMobile;
-    console.log('menuMobile', this.menuMobile);
   }
   ngOnInit(): void {
+    if (Boolean(localStorage.getItem('isConnected'))) {
+      this.connecte=true;
+     }
   }
+
+ 
+  logout(): void {
+    localStorage.removeItem('isConnected');
+    this.router.navigateByUrl('')
+    this.connecte=false
+  }
+
+
+
 
 }

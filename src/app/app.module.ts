@@ -11,6 +11,8 @@ import { FormContactComponent } from './form-contact/form-contact.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { InfosPremiumComponent } from './infos-premium/infos-premium.component';
+import { HttpClientModule } from '@angular/common/http';
+import { AuthComponent } from './auth/auth.component';
 
 
 @NgModule({
@@ -22,6 +24,8 @@ import { InfosPremiumComponent } from './infos-premium/infos-premium.component';
     PortfolioComponent,
     FormContactComponent,
     InfosPremiumComponent,
+    AuthComponent,
+    
    
   ],
   imports: [
@@ -29,6 +33,7 @@ import { InfosPremiumComponent } from './infos-premium/infos-premium.component';
     AppRoutingModule,
     FormsModule, 
     ReactiveFormsModule, ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
+    HttpClientModule
     
   ],
   providers: [],
